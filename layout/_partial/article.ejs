@@ -4,7 +4,7 @@
       <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
     </div>
   <%}%>
-  <div class="article-inner">
+  <div class="article-inner <% if (path === 'index.html') { %> index-article-inner <% } %>">
     <% if (theme.fancybox){ %>
       <input type="hidden" class="isFancy" />
     <% } %>
@@ -74,7 +74,7 @@
             $("#shang_pay_txt").text(dataid=="alipay"?"支付宝":"微信");
           });
           function dashangToggle(){
-            
+
             $(".hide_box").fadeToggle();
             $(".shang_box").fadeToggle();
           }

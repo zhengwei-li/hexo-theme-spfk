@@ -6,7 +6,9 @@
 <% if (theme.mathjax){ %>
 <%- partial('mathjax') %>
 <% } %>
-<%- partial('scrolling-button') %>
+<%if(path !== 'index.html'){%>
+  <%- partial('scrolling-button') %>
+<%}%>
 <%- partial('hide-labels') %>
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 </script>

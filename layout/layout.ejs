@@ -7,7 +7,9 @@
     <div class="mid-col">
       <%- partial('_partial/mobile-nav', null, {cache: !config.relative_link}) %>
       <div class="body-wrap"><%- body %></div>
+      <%if(path !== 'index.html'){%>
       <%- partial('_partial/footer') %>
+      <%}%>
     </div>
     <%- partial('_partial/after-footer') %>
   </div>
