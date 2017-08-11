@@ -4,7 +4,7 @@
       <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
     </div>
   <%}%>
-  <div class="article-inner <% if (path === 'index.html') { %> index-article-inner <% } %>">
+  <div class="article-inner">
     <% if (theme.fancybox){ %>
       <input type="hidden" class="isFancy" />
     <% } %>

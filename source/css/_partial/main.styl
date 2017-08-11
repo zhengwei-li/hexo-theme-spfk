@@ -1,3 +1,10 @@
+body{
+  @media screen and (max-width:1040px) {
+
+  }@media screen and (max-width:800px) {
+    overflow: auto !important;
+  }
+}
 #container{
     position:relative;
     min-height:100%;
@@ -79,9 +86,26 @@
         width: auto;
         overflow: hidden;
     }
+    .home-page {
+      background-image: url("../../img/背景切图.png");
+      background-size: cover;
+      background-position: center center;
+      .body-wrap{
+        height: 100%;
+        h1{
+          margin: 0 auto;
+          font-size: 50px;
+          color: white;
+        }
+        margin-top: 20%;
+        @media screen and (max-width:800px) {
+          margin-top: 2% !important;
+        }
+      }
+    }
 
     @media screen and (max-width:1040px) {
-        
+
     }@media screen and (max-width:800px) {
         @import "_partial/mobile"
     }
@@ -756,7 +780,7 @@
             color: rgba(255, 255, 255, .8);
         }
         &:hover {
-            background: rgba(147, 181, 224, .3) !important; 
+            background: rgba(147, 181, 224, .3) !important;
             .fa {
                 color: white;
             }
@@ -782,7 +806,7 @@
     -webkit-appearance: none;
     &:hover {
         color: #FFF;
-        opacity: 1; 
+        opacity: 1;
     }
 }
 
