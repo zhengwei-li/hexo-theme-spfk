@@ -6,7 +6,7 @@
 menu:
   Home: /
   Resume: /resume
-  blog: /blog
+  # blog: /blog
   # 留言打卡: /about
   # 前端导航: /FrontEndGuide
   # 静心阅读: /tags
